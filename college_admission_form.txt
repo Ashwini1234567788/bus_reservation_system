@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>Frame</title>
+    <script>
+        function validate() {
+            var login = document.forms["myForm"]["login"].value;
+            var pass = document.forms["myForm"]["pass"].value;
+            var dob = document.forms["myForm"]["DOB"].value;
+            var gender = document.forms["myForm"]["gender"].value;
+            var father'name = document.forms["myForm"]["father's name"].value;
+            var mother's name = document.forms["myForm"["mother's name"].value;
+         
+            if (login.trim() === "") {
+                alert("Login Name must be filled out");
+                return false;
+            }
+            if(pass.trim() === "") {
+                alert("Password must be filled out");
+                return false;
+            }
+
+            if (dob.trim() === "") {
+                alert("Birthdate must be filled out");
+                return false;
+            }
+
+            if (gender.trim() === "") {
+                alert("Gender must be selected");
+                return false;
+            } 
+            if (Father.trim() === "") {
+                alert("Father's name must be selected");
+                return false;
+            }
+            if (mother.trim() === "") {
+                alert("Mother's name must be selected");
+                return false;
+            }
+            if (mail.trim() === "") {
+                alert("Email Id must be selected");
+                return false;
+            }
+            if (address.trim() === "") {
+                alert("Address must be selected");
+                return false;
+            }
+            if (login !== "Aswini" || pass !== "Aswini@04" || dob !== "04.09.2003" || gender !== "f") {
+                alert("valid credentials");
+                return true;
+            }
+            else
+            return false;
+        }
+            
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Form Submission</h1>
+    </center>
+    <form name="myForm" action="home.jsp" method="get">
+        Login Name: 
+            <input type="text" name="login" size=20 placeholder="Name"> 
+            <br>
+        Password: 
+            <input type="password" name="pass" size=20 placeholder="Password"> 
+            <br>
+        Birthdate: 
+            <input type="text" name="DOB" size=20 placeholder="DOB"> 
+            <br>
+        Father's Name:
+            <input type="text" name="Name" size=20 placeholder="Father's Name">
+            <br>
+        Mother's Name:
+            <input type="text" name="Name" size=20 placeholder="Mother's Name">
+            <br>
+        Address:
+            <input type="p" name="name" size=100 placeholder="Address">
+            <br>
+        Gender: 
+            <input type="radio" name="gender" value="F"> Female <br>
+            <input type="radio" name="gender" value="M"> Male <br>
+            <input type="radio" name="gender" value="O"> Others <br>
+            <br>
+        Department: 
+            <select name="dept">
+               <option>CSE</option>
+               <option>IT</option>
+               <option>ECE</option
+               <option>EEE</option>
+               <option>AI&DS</option>
+            </select>
+            <br>
+        Phone Number:
+            <input type="text" id="number" name="number" placeholder="Phonenumber">
+            <br>
+        E-Mail:
+            <input type="text" id="mail" size=20 placeholder="Mail Id">
+            <br> 
+        <image src="D:\Wallpaper\hd_41804cbefc9a9505343407a602d404aa.jpg" style=width:100px height:100px>
+        <br>
+        
+        <input type="button" value="check" onclick="validate()">
+        <br>
+        <p> <a href="https://smvec.ac.in/"> SMVEC </a> </p>
+        <input type="submit" value="login">                                          
+    </form>
+</body>
+</html>
